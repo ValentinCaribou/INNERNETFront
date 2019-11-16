@@ -17,16 +17,14 @@ const LeftDrawer = props => {
   let { navDrawerOpen } = props;
 
   const styles = {
-    // logo: {
-    //   cursor: "pointer",
-    //   fontSize: 22,
-    //   color: typography.textFullWhite,
-    //   lineHeight: `${spacing.desktopKeylineIncrement}px`,
-    //   fontWeight: typography.fontWeightLight,
-    //   backgroundColor: blue600,
-    //   paddingLeft: 40,
-    //   height: 56
-    // },
+    logo: {
+      maxWidth: "100%",
+      height: "80px"
+    },
+    logoContainer: {
+      textAlign: "center",
+      margin: 0
+    },
     menuItem: {
       color: "white",
       fontSize: 14
@@ -63,7 +61,7 @@ const LeftDrawer = props => {
     menuItems: {
       display: "flex",
       flexDirection: "column",
-      height: "calc(100% - 80px)"
+      height: "calc(100% - 70px)"
     },
     signOut: {
       marginTop: "auto"
@@ -119,6 +117,7 @@ const LeftDrawer = props => {
           ))}
         </div>
         <div style={styles.signOut}>
+        <figure style={styles.logoContainer}><img style={styles.logo} src="assets/img/INNERNET.png" alt="Innernet"/></figure>
           <MenuItem
             key={1}
             style={styles.menuItem}
@@ -127,6 +126,7 @@ const LeftDrawer = props => {
             onClick={event => handleClick(event)}
             containerElement={<Link to={props.signOut.link} />}
           />
+          
         </div>
       </div>
     </Drawer>

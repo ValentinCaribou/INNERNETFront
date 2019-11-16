@@ -8,6 +8,7 @@ import Data from "../data";
 import { connect } from "react-redux";
 import LoginPage from "./LoginPage";
 import { loginUser, logoutUser } from "../actions/auth";
+import Legal from "../components/Legal";
 
 class App extends React.Component {
   constructor(props) {
@@ -81,6 +82,7 @@ class App extends React.Component {
                 />
 
                 <div style={styles.container}>{this.props.children}</div>
+                <Legal style={styles.container} />
               </div>
             )}
           {!isAuthenticated && (
