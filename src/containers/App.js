@@ -81,8 +81,11 @@ class App extends React.Component {
                   onLogoutClick={() => dispatch(logoutUser())}
                 />
 
-                <div style={styles.container}>{this.props.children}</div>
-                <Legal style={styles.container} />
+                <div style={styles.container}>
+                  {this.props.children}
+                  <Legal />
+                </div>
+                
               </div>
             )}
           {!isAuthenticated && (
