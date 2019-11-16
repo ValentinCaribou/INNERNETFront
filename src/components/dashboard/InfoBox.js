@@ -8,6 +8,9 @@ class InfoBox extends React.Component {
     const { color, title, value, Icon, debit } = this.props;
 
     const styles = {
+      paper: {
+        boxShadow: 'none',
+      },
       content: {
         textAlign: 'center',
         paddingBottom: 10,
@@ -54,8 +57,7 @@ class InfoBox extends React.Component {
     }
 
     return (
-      <Paper>
-
+      <Paper style={styles.paper}>
         <div style={styles.content}>
           <div style={styles.iconSpan}>
             <Icon color={white} style={style} />

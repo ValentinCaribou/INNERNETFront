@@ -74,7 +74,7 @@ const debitUsage = props => {
                 debit={"descendant"}
                 color={amber600}
                 title="Débit descendant"
-                value="30 MB/S"
+                value="1.2 GB/S"
               />
             </ResponsiveContainer>
           </div>
