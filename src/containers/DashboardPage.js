@@ -13,6 +13,7 @@ import InfoBox from "../components/dashboard/InfoBox";
 import NewOrders from "../components/dashboard/NewOrders";
 import MonthlySales from "../components/dashboard/MonthlySales";
 import BrowserUsage from "../components/dashboard/BrowserUsage";
+import DebitUsage from "../components/dashboard/debitUsage";
 // import RecentlyProducts from '../components/dashboard/RecentlyProducts';
 import LineBarChart from "../components/dashboard/LineBarChart";
 import globalStyles from "../styles";
@@ -67,6 +68,10 @@ const DashboardPage = () => {
       </div>
 
       <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
+          <DebitUsage data={Data.dashBoardPage.browserUsage} />
+        </div>
+
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
           {/*<RecentlyProducts data={Data.dashBoardPage.recentProducts}/>*/}
           <LineBarChart data={Data.dashBoardPage.lineBarChart} />

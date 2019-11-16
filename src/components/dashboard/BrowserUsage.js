@@ -5,12 +5,15 @@ import Avatar from "material-ui/Avatar";
 import List from "material-ui/List/List";
 import ListItem from "material-ui/List/ListItem";
 import GlobalStyles from "../../styles";
+import {typography} from "material-ui/styles";
+import {purple600,purple500, white} from "material-ui/styles/colors";
 
 const BrowserUsage = props => {
   const styles = {
     paper: {
       minHeight: 344,
-      padding: 10
+      color: white,
+      backgroundColor: purple500,
     },
     legend: {
       paddingTop: 20
@@ -18,12 +21,19 @@ const BrowserUsage = props => {
     pieChartDiv: {
       height: 290,
       textAlign: "center"
+    },
+    header: {
+      fontSize: 24,
+      fontWeight: typography.fontWeightLight,
+      color: white,
+      backgroundColor: purple600,
+      padding: 10
     }
   };
 
   return (
     <Paper style={styles.paper}>
-      <span style={GlobalStyles.title}>Browser Usage</span>
+      <div style={{ ...styles.header }}>New Orders</div>
 
       <div style={GlobalStyles.clear} />
 
