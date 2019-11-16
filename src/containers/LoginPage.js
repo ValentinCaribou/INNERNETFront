@@ -156,8 +156,8 @@ class LoginPage extends React.Component {
         <div>
           <div style={styles.loginContainer}>
             <Paper style={styles.paper}>
-              <p style={styles.formHeader}>React Redux CRM</p>
-              <p style={styles.subHeader}>Version 1.1.0</p>
+              <p style={styles.formHeader}>INNERNET Login</p>
+              <p style={styles.subHeader}>Version 1.0</p>
               <Formsy.Form
                 onValid={this.enableButton}
                 onInvalid={this.disableButton}
@@ -181,11 +181,11 @@ class LoginPage extends React.Component {
                   required
                 />
                 <FormsyText
-                  hintText="Password"
+                  hintText="Mot de passe"
                   ref="password"
                   name="password"
                   value={this.state.password ? this.state.password : ""}
-                  floatingLabelText="Password"
+                  floatingLabelText="Mot de passe"
                   fullWidth={true}
                   type="password"
                   validations={{
@@ -201,7 +201,7 @@ class LoginPage extends React.Component {
                 <div>
                   <Link to="/">
                     <RaisedButton
-                      label="Login"
+                      label="Connexion"
                       primary={true}
                       onClick={() => this.handleClick(event)}
                       style={styles.loginBtn}
