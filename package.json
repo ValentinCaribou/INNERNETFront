@@ -1,4 +1,5 @@
 {
+  "homepage": "https://valentincaribou.github.io/INNERNETFront",
   "name": "react-crm",
   "version": "1.0.7",
   "description": "Reetek CRM using React and Material-UI",
@@ -8,6 +9,8 @@
   "scripts": {
     "start": "npm-run-all --parallel open:src",
     "demo": "npm-run-all --parallel test:watch open:src lint:watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
@@ -22,13 +25,14 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/index.html"
   },
-  "author": "Harry Ho",
+  "author": "Equipe InnerNet",
   "license": "MIT",
   "dependencies": {
     "flexboxgrid": "6.3.1",
     "font-awesome": "4.7.0",
     "formsy-material-ui": "0.6.0",
     "formsy-react": "0.19.5",
+    "gh-pages": "2.1.1",
     "history": "4.5.1",
     "lodash": "4.17.11",
     "material-ui": "0.19.4",
@@ -38,6 +42,7 @@
     "react-redux": "5.0.5",
     "react-router": "3.0.2",
     "react-router-redux": "4.0.8",
+    "react-script": "2.0.5",
     "react-tap-event-plugin": "2.0.1",
     "recharts": "0.20.8",
     "redux": "3.7.1",
@@ -102,9 +107,5 @@
     "material",
     "material-ui",
     "crm"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/harryho/react-crm"
-  }
+  ]
 }

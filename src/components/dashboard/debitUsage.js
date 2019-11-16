@@ -3,11 +3,11 @@ import Paper from "material-ui/Paper";
 import { ResponsiveContainer } from "recharts";
 import GlobalStyles from "../../styles";
 import {typography} from "material-ui/styles";
-import {amber600, amber500, white, black} from "material-ui/styles/colors";
+import {amber600, white, black} from "material-ui/styles/colors";
 import Arrow from "material-ui/svg-icons/navigation/arrow-forward";
 import InfoBox from "./InfoBox";
 
-const debitUsage = props => {
+const debitUsage = () => {
   const styles = {
     paper: {
       minHeight: 344,

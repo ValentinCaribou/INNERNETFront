@@ -1,15 +1,12 @@
 import React, { PropTypes } from "react";
 import Paper from "material-ui/Paper";
-import Avatar from "material-ui/Avatar";
-import List from "material-ui/List/List";
-import ListItem from "material-ui/List/ListItem";
 import GlobalStyles from "../../styles";
 import { typography } from "material-ui/styles";
-import { white, teal500, teal400, teal600, grey700 } from "material-ui/styles/colors";
+import { white, teal500, teal400, grey700 } from "material-ui/styles/colors";
 import Toggle from "material-ui/Toggle";
 import { grey500 } from "material-ui/styles/colors";
 
-const ParameterBox = props => {
+const ParameterBox = () => {
   const styles = {
     paper: {
       backgroundColor: white,
