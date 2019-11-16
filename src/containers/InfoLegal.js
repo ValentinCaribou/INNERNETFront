@@ -37,7 +37,7 @@ class AboutPage extends React.Component {
     }
     return (
       <div style={styles.about}>
-        <div style={styles.title}><b>Informations légals</b></div>
+        <div style={styles.title}><b>Informations légales</b></div>
 
         <div style={styles.version}>Editeur</div>
         <div style={styles.url}>innernet.fr</div>
