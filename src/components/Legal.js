@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react";
+import { Link } from "react-router";
 import { grey500 } from "material-ui/styles/colors";
 
 
@@ -14,7 +15,7 @@ class Legal extends React.Component {
 
     return (
       <div styles={styles.legal}>
-        <p>mentions légales | politique de confidentialité</p>
+        <Link to="/info"><p>mentions légales | politique de confidentialité</p></Link>
       </div>
     );
   }

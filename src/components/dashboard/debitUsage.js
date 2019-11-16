@@ -52,7 +52,7 @@ const debitUsage = props => {
       <div style={GlobalStyles.clear} />
 
       <div className="row">
-        <div className="col-xs-12 col-sm-8 col-md-8 col-lg-6" style={styles.affichageDebit}>
+        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" style={styles.affichageDebit}>
           <div style={styles.pieChartDiv}>
             <ResponsiveContainer>
               <InfoBox
@@ -66,7 +66,7 @@ const debitUsage = props => {
           </div>
         </div>
 
-        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-6" style={styles.affichageDebit}>
+        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" style={styles.affichageDebit}>
           <div style={styles.pieChartDiv}>
             <ResponsiveContainer>
               <InfoBox

@@ -5,6 +5,7 @@ import NotFoundPage from "./containers/NotFoundPage.js";
 import FormPage from "./containers/FormPage";
 import Dashboard from "./containers/DashboardPage";
 import AboutPage from "./containers/AboutPage";
+import InfoLegal from "./containers/InfoLegal";
 // import CustomerListPage from "./containers/CustomerListPage";
 // import CustomerFormPage from "./containers/CustomerFormPage";
 
@@ -19,6 +20,7 @@ export default (
       {/*<Route path="customer/:id" component={CustomerFormPage} />*/}
       {/*<Route path="customers" component={CustomerListPage} />*/}
       <Route path="about" component={AboutPage} />
+      <Route path="info" component={InfoLegal} />
       <Route path="*" component={NotFoundPage} />
     </Route>
   </Route>

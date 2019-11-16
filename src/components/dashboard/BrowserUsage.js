@@ -68,7 +68,7 @@ const BrowserUsage = props => {
                       <Avatar icon={item.icon} backgroundColor={item.color} />
                     }
                   >
-                    {item.name}
+                    <div style={{color: white}}>{item.name}</div>
                   </ListItem>
                 ))}
               </List>
