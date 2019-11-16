@@ -16,8 +16,10 @@ const data = {
     // { text: "Order", icon: <GridOn />, link: "/orders" },
     // { text: "Customer", icon: <PermIdentity />, link: "/customers" },
     // { text: "Product", icon: <GridOn />, link: "/products" },
-    { text: "About", icon: <Web />, link: "/about" }
+    { text: "About", icon: <Web />, link: "/about" },
   ],
+  signOut:
+    { text: "Sign out", icon: <SettingsPower />, link: "/login" },
   signOutMenus: [
     { text: "Sign out", icon: <SettingsPower />, link: "/login" },
     { text: "Change password", icon: <VpnKey />, link: "" }

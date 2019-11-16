@@ -79,23 +79,23 @@ const LeftDrawer = props => {
         <span style={styles.avatar.span}>
           {props.username}
 
-          <IconMenu
-            color={white}
-            iconButtonElement={
-              <IconButton>
-                <ContentFilter color={orange} />
-              </IconButton>
-            }
-            targetOrigin={{ horizontal: "right", vertical: "top" }}
-            anchorOrigin={{ horizontal: "right", vertical: "top" }}
-          >
-            <MenuItem
-              primaryText="Sign out"
-              leftIcon={<SettingsPower />}
-              onClick={event => handleClick(event)}
-            />
-            <MenuItem primaryText="Change password" leftIcon={<VpnKey />} />
-          </IconMenu>
+          {/*<IconMenu*/}
+          {/*  color={white}*/}
+          {/*  iconButtonElement={*/}
+          {/*    <IconButton>*/}
+          {/*      <ContentFilter color={orange} />*/}
+          {/*    </IconButton>*/}
+          {/*  }*/}
+          {/*  targetOrigin={{ horizontal: "right", vertical: "top" }}*/}
+          {/*  anchorOrigin={{ horizontal: "right", vertical: "top" }}*/}
+          {/*>*/}
+          {/*  <MenuItem*/}
+          {/*    primaryText="Sign out"*/}
+          {/*    leftIcon={<SettingsPower />}*/}
+          {/*    onClick={event => handleClick(event)}*/}
+          {/*  />*/}
+          {/*  <MenuItem primaryText="Change password" leftIcon={<VpnKey />} />*/}
+          {/*</IconMenu>*/}
         </span>
       </div>
       <div>
@@ -108,6 +108,16 @@ const LeftDrawer = props => {
             containerElement={<Link to={menu.link} />}
           />
         ))}
+      </div>
+      <div>
+        <MenuItem
+          key={1}
+          style={styles.menuItem}
+          primaryText={props.signOut.text}
+          leftIcon={props.signOut.icon}
+          onClick={event => handleClick(event)}
+          containerElement={<Link to={props.signOut.link} />}
+        />
       </div>
     </Drawer>
   );

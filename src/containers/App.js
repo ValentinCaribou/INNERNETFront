@@ -74,6 +74,7 @@ class App extends React.Component {
                 <LeftDrawer
                   navDrawerOpen={navDrawerOpen}
                   menus={Data.menus}
+                  signOut={Data.signOut}
                   signOutMenus={Data.signOutMenus}
                   username={`${firstName} ${lastName}`}
                   onLogoutClick={() => dispatch(logoutUser())}
