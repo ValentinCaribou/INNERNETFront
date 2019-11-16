@@ -33,12 +33,9 @@ const LeftDrawer = props => {
     },
     avatar: {
       div: {
-        padding: "15px 0 20px 15px",
-        // backgroundImage:
-        //   "url(" + require("../assets/img/material_bg.png") + ")",
         backgroundColor: grey800,
-        padding: "20px",
-        height: "80px",
+        padding: "15px 20px",
+        height: "70px",
         boxSizing: "border-box",
         display: "flex",
         alignItems: "center"
@@ -46,14 +43,16 @@ const LeftDrawer = props => {
       icon: {
         display: "block",
         marginRight: "1em",
-        boxShadow: "0px 0px 0px 3px rgba(0,0,0,0.1)"
+        boxShadow: "0px 0px 0px 3px rgba(0,0,0,0.1)",
+        height: "100%",
+        width: "auto"
       },
       span: {
         paddingTop: 0,
         display: "block",
         color: "white",
         fontWeight: 400,
-        fontSize: 19
+        fontSize: 16
       }
     },
     drawer: {

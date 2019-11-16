@@ -2,7 +2,7 @@ import React, { PropTypes } from "react";
 import AppBar from "material-ui/AppBar";
 import IconButton from "material-ui/IconButton";
 import Menu from "material-ui/svg-icons/navigation/menu";
-import { white } from "material-ui/styles/colors";
+import { transparent, grey800, grey200 } from "material-ui/styles/colors";
 // import FlatButton from "material-ui/FlatButton";
 
 
@@ -25,10 +25,14 @@ class Header extends React.Component {
         position: "fixed",
         top: 0,
         overflow: "hidden",
-        maxHeight: 57
+        maxHeight: 57,
+        backgroundColor: transparent,
+        boxShadow: "none"
       },
       menuButton: {
-        marginLeft: 10
+        marginLeft: 10,
+        backgroundColor: grey200,
+        borderRadius: "50%"
       },
       iconsRightContainer: {
         marginLeft: 20
@@ -51,7 +55,7 @@ class Header extends React.Component {
                 style={style.menuButton}
                 onClick={handleChangeRequestNavDrawer}
               >
-                <Menu color={white} />
+                <Menu color={grey800} backgroundColor={grey200}/>
               </IconButton>
             </div>
           }

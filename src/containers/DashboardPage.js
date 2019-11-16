@@ -3,7 +3,7 @@ import {
   cyan600,
   pink600,
   purple600,
-  orange600
+  orange600,
 } from "material-ui/styles/colors";
 import Assessment from "material-ui/svg-icons/action/assessment";
 import Face from "material-ui/svg-icons/action/face";
@@ -17,6 +17,7 @@ import BrowserUsage from "../components/dashboard/BrowserUsage";
 import LineBarChart from "../components/dashboard/LineBarChart";
 import globalStyles from "../styles";
 import Data from "../data";
+import ParameterBox from "../components/dashboard/ParameterBox";
 
 const DashboardPage = () => {
   return (
@@ -70,6 +71,10 @@ const DashboardPage = () => {
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
           {/*<RecentlyProducts data={Data.dashBoardPage.recentProducts}/>*/}
           <LineBarChart data={Data.dashBoardPage.lineBarChart} />
+        </div>
+
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
+          <ParameterBox data={Data.dashBoardPage.browserUsage} />
         </div>
 
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
