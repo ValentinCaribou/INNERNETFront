@@ -33,12 +33,12 @@ const BrowserUsage = props => {
 
   return (
     <Paper style={styles.paper}>
-      <div style={{ ...styles.header }}>New Orders</div>
+      <div style={{ ...styles.header }}>Statistique</div>
 
       <div style={GlobalStyles.clear} />
 
       <div className="row">
-        <div className="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <div className="col-xs-12 col-sm-8 col-md-8 col-lg-7">
           <div style={styles.pieChartDiv}>
             <ResponsiveContainer>
               <PieChart>
@@ -57,7 +57,7 @@ const BrowserUsage = props => {
           </div>
         </div>
 
-        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div className="col-xs-12 col-sm-4 col-md-4 col-lg-5">
           <div style={styles.legend}>
             <div style={styles.legend}>
               <List>

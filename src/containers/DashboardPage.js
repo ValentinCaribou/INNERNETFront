@@ -73,10 +73,10 @@ const DashboardPage = () => {
           <DebitUsage data={Data.dashBoardPage.browserUsage} />
         </div>
 
-        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
-          {/*<RecentlyProducts data={Data.dashBoardPage.recentProducts}/>*/}
-          <LineBarChart data={Data.dashBoardPage.lineBarChart} />
-        </div>
+        {/*<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">*/}
+        {/*  /!*<RecentlyProducts data={Data.dashBoardPage.recentProducts}/>*!/*/}
+        {/*  <LineBarChart data={Data.dashBoardPage.lineBarChart} />*/}
+        {/*</div>*/}
 
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 m-b-15 ">
           <ParameterBox data={Data.dashBoardPage.browserUsage} />
