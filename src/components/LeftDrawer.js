@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react";
 import Drawer from "material-ui/Drawer";
 // import { spacing, typography } from "material-ui/styles";
-import { white, orange } from "material-ui/styles/colors";
+import { white, orange, grey800 } from "material-ui/styles/colors";
 import MenuItem from "material-ui/MenuItem";
 import IconButton from "material-ui/IconButton";
 import IconMenu from "material-ui/IconMenu";
@@ -28,7 +28,7 @@ const LeftDrawer = props => {
     //   height: 56
     // },
     menuItem: {
-      color: white,
+      color: "white",
       fontSize: 14
     },
     avatar: {
@@ -36,29 +36,38 @@ const LeftDrawer = props => {
         padding: "15px 0 20px 15px",
         // backgroundImage:
         //   "url(" + require("../assets/img/material_bg.png") + ")",
-        backgroundColor: "rgba(227, 231, 232, 0.83)",
-        height: 45,
-        // backgroundColor: "silver"
+        backgroundColor: grey800,
+        padding: "20px",
+        height: "80px",
+        boxSizing: "border-box",
+        display: "flex",
+        alignItems: "center"
       },
       icon: {
-        float: "left",
         display: "block",
-        marginRight: 15,
-        boxShadow: "0px 0px 0px 8px rgba(0,0,0,0.2)"
+        marginRight: "1em",
+        boxShadow: "0px 0px 0px 3px rgba(0,0,0,0.1)"
       },
       span: {
         paddingTop: 0,
         display: "block",
-        color: "purple",
+        color: "white",
         fontWeight: 400,
-        fontSize: 19,
-        textShadow: "1px 1px #444"
+        fontSize: 19
       }
     },
     drawer: {
       color: "darkgrey",
       backgroundColor: "rgba(227, 231, 232, 0.63)",
       overflow: "auto"
+    },
+    menuItems: {
+      display: "flex",
+      flexDirection: "column",
+      height: "calc(100% - 80px)"
+    },
+    signOut: {
+      marginTop: "auto"
     }
   };
 
@@ -98,26 +107,28 @@ const LeftDrawer = props => {
           {/*</IconMenu>*/}
         </span>
       </div>
-      <div>
-        {props.menus.map((menu, index) => (
+      <div style={styles.menuItems}>
+        <div>
+          {props.menus.map((menu, index) => (
+            <MenuItem
+              key={index}
+              style={styles.menuItem}
+              primaryText={menu.text}
+              leftIcon={menu.icon}
+              containerElement={<Link to={menu.link} />}
+            />
+          ))}
+        </div>
+        <div style={styles.signOut}>
           <MenuItem
-            key={index}
+            key={1}
             style={styles.menuItem}
-            primaryText={menu.text}
-            leftIcon={menu.icon}
-            containerElement={<Link to={menu.link} />}
+            primaryText={props.signOut.text}
+            leftIcon={props.signOut.icon}
+            onClick={event => handleClick(event)}
+            containerElement={<Link to={props.signOut.link} />}
           />
-        ))}
-      </div>
-      <div>
-        <MenuItem
-          key={1}
-          style={styles.menuItem}
-          primaryText={props.signOut.text}
-          leftIcon={props.signOut.icon}
-          onClick={event => handleClick(event)}
-          containerElement={<Link to={props.signOut.link} />}
-        />
+        </div>
       </div>
     </Drawer>
   );
