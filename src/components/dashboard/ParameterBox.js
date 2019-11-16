@@ -58,30 +58,11 @@ const ParameterBox = props => {
 
       <div>
         <div style={styles.toggleDiv}>
-          <Toggle
-            label="Nom"
-            name="nom"
-            style={styles.toggle}
-            thumbSwitchedStyle={styles.thumbSwitched}
-            trackSwitchedStyle={styles.trackSwitched}
-            // onChange={this.handleChange}
-            // defaultToggled={customer.membership}
-            labelStyle={styles.toggleLabel}
-          />
-          <Toggle
-            label="Prénom"
-            name="Prénom"
-            style={styles.toggle}
-            thumbSwitchedStyle={styles.thumbSwitched}
-            trackSwitchedStyle={styles.trackSwitched}
-            // onChange={this.handleChange}
-            // defaultToggled={customer.membership}
-            labelStyle={styles.toggleLabel}
-          />
-          <Toggle
+        <Toggle
             label="Age"
             name="Age"
             style={styles.toggle}
+            defaultToggled={true}
             thumbSwitchedStyle={styles.thumbSwitched}
             trackSwitchedStyle={styles.trackSwitched}
             // onChange={this.handleChange}
@@ -89,9 +70,31 @@ const ParameterBox = props => {
             labelStyle={styles.toggleLabel}
           />
           <Toggle
-            label="durée de connexion"
-            name="durée de connexion"
+            label="Data consommée"
+            name="Data consommée"
             style={styles.toggle}
+            defaultToggled={true}
+            thumbSwitchedStyle={styles.thumbSwitched}
+            trackSwitchedStyle={styles.trackSwitched}
+            // onChange={this.handleChange}
+            // defaultToggled={customer.membership}
+            labelStyle={styles.toggleLabel}
+          />
+          <Toggle
+            label="Horaires de connexion"
+            name="Horaires de connexion"
+            style={styles.toggle}
+            thumbSwitchedStyle={styles.thumbSwitched}
+            trackSwitchedStyle={styles.trackSwitched}
+            // onChange={this.handleChange}
+            // defaultToggled={customer.membership}
+            labelStyle={styles.toggleLabel}
+          />
+          <Toggle
+            label="Durée de connexion"
+            name="Durée de connexion"
+            style={styles.toggle}
+            defaultToggled={true}
             thumbSwitchedStyle={styles.thumbSwitched}
             trackSwitchedStyle={styles.trackSwitched}
             // onChange={this.handleChange}
