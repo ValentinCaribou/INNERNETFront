@@ -41,3 +41,6 @@ dist
 
 # Fake server
 server/
+
+package-lock.json
+yarn.lock
